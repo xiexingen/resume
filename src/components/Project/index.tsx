@@ -1,10 +1,12 @@
 import React, { PureComponent, Fragment } from 'react';
-import ReactDOM from "react-dom";
-import { Collapse, Card, Divider, Skeleton, Row, Col, Icon, List } from 'antd';
+import ReactDOM from 'react-dom';
+import { Collapse, Card, Divider, Skeleton, Row, Col, List } from 'antd';
+import { LinkOutlined } from '@ant-design/icons';
+
 import ImageViewer from '../ImageViewer';
 import styles from './index.less';
 
-class Index extends PureComponent<any,any> {
+class Index extends PureComponent<any, any> {
   state = {
     loadedCoPanels: ['0'],
     imageView: {
@@ -14,7 +16,7 @@ class Index extends PureComponent<any,any> {
     },
   };
 
-  handleChangeCollapse = activeKey => {
+  handleChangeCollapse = (activeKey) => {
     const { loadedCoPanels } = this.state;
     if (!loadedCoPanels.includes(activeKey)) {
       loadedCoPanels.push(activeKey);
@@ -23,10 +25,12 @@ class Index extends PureComponent<any,any> {
       });
     }
 
-    const curNode=ReactDOM.findDOMNode(this);
+    const curNode = ReactDOM.findDOMNode(this);
     if (curNode instanceof HTMLElement) {
-      const activeItem=curNode.getElementsByClassName('ant-collapse-item-active')[0];
-      activeItem.scrollIntoView&&activeItem.scrollIntoView();
+      const activeItem = curNode.getElementsByClassName(
+        'ant-collapse-item-active',
+      )[0];
+      activeItem.scrollIntoView && activeItem.scrollIntoView();
     }
   };
 
@@ -45,8 +49,8 @@ class Index extends PureComponent<any,any> {
       imageView: {
         visible: true,
         imgIndex: openIndex,
-        images: images.map(item=>{
-          const result={...item,alt:item.title};
+        images: images.map((item) => {
+          const result = { ...item, alt: item.title };
           return result;
         }),
       },
@@ -67,7 +71,7 @@ class Index extends PureComponent<any,any> {
         lg: 8,
         xl: 8,
         xxl: 12,
-      }
+      },
     };
     const colItemLayout = {
       xs: 24, // <576px
@@ -80,7 +84,11 @@ class Index extends PureComponent<any,any> {
     return (
       <Card className="small-card" bordered={false}>
         <Divider>项目经历</Divider>
-        <Collapse defaultActiveKey={['0']} onChange={this.handleChangeCollapse} accordion>
+        <Collapse
+          defaultActiveKey={['0']}
+          onChange={this.handleChangeCollapse}
+          accordion
+        >
           {dataSource.map((item, index) => {
             const strKey = `${index}`;
             return (
@@ -91,22 +99,34 @@ class Index extends PureComponent<any,any> {
                     <b>{item.name}</b>
                     &nbsp;&nbsp;&nbsp;&nbsp;
                     {item.url ? (
-                      <a rel="noopener noreferrer" target="_blank" href={item.url}>
-                        <Icon type="link" theme="outlined" />
+                      <a
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        href={item.url}
+                      >
+                        <LinkOutlined />
                         &nbsp;链接
                       </a>
                     ) : null}
                   </Fragment>
                 }
               >
-                <Skeleton loading={loadedCoPanels.includes(strKey) === false} active avatar>
-                  <Row type="flex" className={styles['project-row']} {...rowProps}>
+                <Skeleton
+                  loading={loadedCoPanels.includes(strKey) === false}
+                  active
+                  avatar
+                >
+                  <Row className={styles['project-row']} {...rowProps}>
                     {item.images.map((imgItem, imgIndex) => (
                       <Col key={imgIndex} {...colItemLayout}>
                         <Card
                           className="p-b-xs"
                           hoverable
-                          onClick={this.handleOpenImgView.bind(this,item.images, imgIndex)}
+                          onClick={this.handleOpenImgView.bind(
+                            this,
+                            item.images,
+                            imgIndex,
+                          )}
                           cover={<img alt={imgItem.title} src={imgItem.src} />}
                         >
                           <Card.Meta description={imgItem.title} />
@@ -122,7 +142,9 @@ class Index extends PureComponent<any,any> {
                     header={<b>{desc.header}</b>}
                     bordered={false}
                     dataSource={desc.contents}
-                    renderItem={content => <List.Item>{content}</List.Item>}
+                    renderItem={(content: string) => (
+                      <List.Item>{content}</List.Item>
+                    )}
                   />
                 ))}
               </Collapse.Panel>

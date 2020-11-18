@@ -6,7 +6,15 @@ import Concat from '@/components/Concat';
 import Project from '@/components/Project';
 import Technical from '@/components/Technical';
 import AboutMe from '@/components/AboutMe';
-import {technicals,opens,companys,educations,projects,socials,concats} from '../data.json'
+import {
+  technicals,
+  opens,
+  companys,
+  educations,
+  projects,
+  socials,
+  concats,
+} from '../data.json';
 import styles from './index.less';
 
 export default () => {

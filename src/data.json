@@ -30,54 +30,60 @@
   ],
   "socials": [
     {
-      "icon": "crown",
+      "icon": "CrownOutlined",
       "url": "https://blog.xxgtalk.cn",
       "title": "个人博客",
       "description": "个人经验、踩过的坑、心得、笔记等"
     },
     {
-      "icon": "robot",
+      "icon": "GithubOutlined",
+      "url": "http://www.github.com/wetrial/wetrials",
+      "title": "wetrials",
+      "description": "公司的前端组件库"
+    },
+    {
+      "icon": "RobotOutlined",
       "url": "http://www.cnblogs.com/xiexingen",
       "title": "博客园",
       "description": "18年以前的文章"
     },
     {
-      "icon": "github",
+      "icon": "GithubOutlined",
       "url": "http://www.github.com/xiexingen",
-      "title": "github",
-      "description": "个人开源的一些个项目"
+      "title": "个人github",
+      "description": "个人学习、娱乐的个人github"
     },
     {
-      "icon": "fire",
-      "url": "http://jui.xxgtalk.cn",
-      "title": "jui",
-      "description": "公司之前的前端框架，1核1G1M的服务器 打开耐心点"
+      "icon": "FireOutlined",
+      "url": "https://github.com/xiexingen/CTS.Signalr",
+      "title": "signalr",
+      "description": "基于Signalr实现的推送"
     },
     {
-      "icon": "smile",
-      "url": "http://jui-sample.xxgtalk.cn/#!gantt/index",
-      "title": "DIY插件",
-      "description": "基于vue的甘特图，1核1G&1M服务器 打开耐心点"
+      "icon": "PullRequestOutlined",
+      "url": "https://github.com/crawlab-team/artipub",
+      "title": "artipub",
+      "description": "参与的社区项目"
     }
   ],
   "concats": [
     {
-      "icon": "phone",
+      "icon": "PhoneOutlined",
       "title": "手机",
       "description": "18569590930"
     },
     {
-      "icon": "qq",
+      "icon": "QqOutlined",
       "title": "QQ",
       "description": "1002275364"
     },
     {
-      "icon": "mail",
+      "icon": "MailOutlined",
       "title": "邮箱",
       "description": "1002275364@qq.com"
     },
     {
-      "icon": "wechat",
+      "icon": "WechatOutlined",
       "title": "微信",
       "description": "xxg1002275364"
     }
