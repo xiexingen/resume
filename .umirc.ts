@@ -1,11 +1,12 @@
 import { defineConfig, utils } from 'umi';
-import chinaWebpack from './config/plugin.chinaWebpack';
 
 const { winPath } = utils;
 
 export default defineConfig({
   favicon: '/favicon.png',
   runtimePublicPath: true,
+  outputPath:'docs',
+  publicPath:'/docs/',
   history: {
     type: 'browser',
   },
@@ -13,7 +14,7 @@ export default defineConfig({
   antd: {},
   request: false,
   targets: {
-    ie: 9,
+    ie: 11,
   },
   dynamicImport: {
     loading: '@/components/PageLoading/index',
@@ -80,7 +81,7 @@ export default defineConfig({
   manifest: {
     basePath: '/',
   },
-  chainWebpack: chinaWebpack,
+  esbuild: {},
   // 配置具体含义见：https://github.com/umijs/umi-webpack-bundle-analyzer#options-for-plugin
   analyze: {
     analyzerMode: 'server',
