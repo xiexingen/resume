@@ -5,7 +5,7 @@ const { winPath } = utils;
 export default defineConfig({
   favicon: '/favicon.png',
   runtimePublicPath: true,
-  outputPath:'docs',
+  outputPath: 'docs',
   //publicPath:'/docs/',
   history: {
     type: 'browser',
@@ -41,13 +41,11 @@ export default defineConfig({
   nodeModulesTransform: {
     type: 'none',
   },
-  routes: [
-    { path: '/', component: '@/pages/index' },
-  ],
+  routes: [{ path: '/', component: '@/pages/index' }],
   lessLoader: {
     javascriptEnabled: true,
   },
-  exportStatic:{},
+  exportStatic: {},
   cssLoader: {
     // 这里的 modules 可以接受 getLocalIdent
     modules: {
@@ -82,6 +80,55 @@ export default defineConfig({
     basePath: '/',
   },
   esbuild: {},
+  chunks: ['react', 'antpeer', 'antd', 'antdesign', 'vendors', 'umi'],
+  chainWebpack(config, { webpack }) {
+    config.optimization.splitChunks({
+      // chunks: 'all',
+      // minSize: 30000,
+      // minChunks: 3,
+      // automaticNameDelimiter: '.',
+      cacheGroups: {
+        // 组件库相关
+        react: {
+          name: 'react',
+          chunks: 'all',
+          test: /[\\/]node_modules[\\/](react|react-dom|react-router|react-router-dom)[\\/]/,
+          priority: 12,
+        },
+        antpeer: {
+          name: 'antpeer',
+          chunks: 'all',
+          test: /[\\/]node_modules[\\/](moment|@ant-design[\\/]icons)[\\/]/,
+          priority: 12,
+        },
+        antd: {
+          name: 'antd',
+          chunks: 'all',
+          test: /[\\/]node_modules[\\/](antd)[\\/]/,
+          priority: 11,
+        },
+        antdesign: {
+          name: 'antdesign',
+          chunks: 'all',
+          test: /[\\/]node_modules[\\/](@ant-design)[\\/]/,
+          priority: 10,
+        },
+        // // 图表库相关
+        // charts: {
+        //   name: 'charts',
+        //   chunks: 'all',
+        //   test: /[\\/]node_modules[\\/](echarts|bizcharts|@antv)[\\/]/,
+        //   priority: 11,
+        // },
+        vendors: {
+          name: 'vendors',
+          chunks: 'all',
+          test: /[\\/]node_modules[\\/]/,
+          priority: 9,
+        },
+      },
+    });
+  },
   // 配置具体含义见：https://github.com/umijs/umi-webpack-bundle-analyzer#options-for-plugin
   analyze: {
     analyzerMode: 'server',
