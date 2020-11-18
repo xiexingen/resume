@@ -6,7 +6,7 @@ export default defineConfig({
   favicon: '/favicon.png',
   runtimePublicPath: true,
   outputPath:'docs',
-  publicPath:'/docs/',
+  //publicPath:'/docs/',
   history: {
     type: 'browser',
   },

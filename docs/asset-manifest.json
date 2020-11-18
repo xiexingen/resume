@@ -1,15 +1,15 @@
 {
-  "/p__index.css": "/docs/p__index.97f41262.chunk.css",
-  "/p__index.js": "/docs/p__index.34f00d8d.async.js",
-  "/umi.css": "/docs/umi.0e1068d7.css",
-  "/umi.js": "/docs/umi.286321de.js",
-  "/vendors~p__index.css": "/docs/vendors~p__index.99f9405e.chunk.css",
-  "/vendors~p__index.js": "/docs/vendors~p__index.836e019f.async.js",
-  "/favicon.png": "/docs/favicon.png",
-  "/index.html": "/docs/index.html",
-  "/upgrade/360.png": "/docs/upgrade/360.png",
-  "/upgrade/browser.js": "/docs/upgrade/browser.js",
-  "/upgrade/chrome.png": "/docs/upgrade/chrome.png",
-  "/upgrade/edge.png": "/docs/upgrade/edge.png",
-  "/upgrade/index.html": "/docs/upgrade/index.html"
+  "/p__index.css": "/p__index.97f41262.chunk.css",
+  "/p__index.js": "/p__index.34f00d8d.async.js",
+  "/umi.css": "/umi.0e1068d7.css",
+  "/umi.js": "/umi.efd5545b.js",
+  "/vendors~p__index.css": "/vendors~p__index.99f9405e.chunk.css",
+  "/vendors~p__index.js": "/vendors~p__index.836e019f.async.js",
+  "/favicon.png": "/favicon.png",
+  "/index.html": "/index.html",
+  "/upgrade/360.png": "/upgrade/360.png",
+  "/upgrade/browser.js": "/upgrade/browser.js",
+  "/upgrade/chrome.png": "/upgrade/chrome.png",
+  "/upgrade/edge.png": "/upgrade/edge.png",
+  "/upgrade/index.html": "/upgrade/index.html"
 }
