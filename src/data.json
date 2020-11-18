@@ -37,19 +37,19 @@
     },
     {
       "icon": "GithubOutlined",
-      "url": "http://www.github.com/wetrial/wetrials",
+      "url": "https://wetrial.github.io/wetrials",
       "title": "wetrials",
       "description": "公司的前端组件库"
     },
     {
       "icon": "RobotOutlined",
-      "url": "http://www.cnblogs.com/xiexingen",
+      "url": "https://www.cnblogs.com/xiexingen",
       "title": "博客园",
       "description": "18年以前的文章"
     },
     {
       "icon": "GithubOutlined",
-      "url": "http://www.github.com/xiexingen",
+      "url": "https://www.github.com/xiexingen",
       "title": "个人github",
       "description": "个人学习、娱乐的个人github"
     },
@@ -118,38 +118,38 @@
       ],
       "images": [
         {
-          "src": "http://qiniu.xxgtalk.cn/resume/mini-car/barcode.jpg",
+          "src": "https://qiniu.xxgtalk.cn/resume/mini-car/barcode.jpg",
           "title": "小程序二维码"
         },
         {
-          "src": "http://qiniu.xxgtalk.cn/resume/mini-car/home.png",
+          "src": "https://qiniu.xxgtalk.cn/resume/mini-car/home.png",
           "title": "首屏"
         },
         {
-          "src": "http://qiniu.xxgtalk.cn/resume/mini-car/list.png",
+          "src": "https://qiniu.xxgtalk.cn/resume/mini-car/list.png",
           "title": "车辆列表"
         },
         {
-          "src": "http://qiniu.xxgtalk.cn/resume/mini-car/list-detail.png",
+          "src": "https://qiniu.xxgtalk.cn/resume/mini-car/list-detail.png",
           "title": "带部分详情的列表"
         },
         {
-          "src": "http://qiniu.xxgtalk.cn/resume/mini-car/detail.png",
+          "src": "https://qiniu.xxgtalk.cn/resume/mini-car/detail.png",
           "title": "车辆详细信息"
         },
         {
-          "src": "http://qiniu.xxgtalk.cn/resume/mini-car/pre-order.png",
+          "src": "https://qiniu.xxgtalk.cn/resume/mini-car/pre-order.png",
           "title": "预定|预约试驾"
         },
         {
-          "src": "http://qiniu.xxgtalk.cn/resume/mini-car/me.png",
+          "src": "https://qiniu.xxgtalk.cn/resume/mini-car/me.png",
           "title": "个人中心"
         }
       ]
     },
     {
       "name": "Wetrial临床试验平台-药物警戒线系统",
-      "url": "http://www.wetrial-pv.com",
+      "url": "https://www.wetrial-pv.com",
       "descriptions": [
         {
           "header": "产品介绍",
@@ -171,26 +171,26 @@
       ],
       "images": [
         {
-          "src": "http://qiniu.xxgtalk.cn/resume/pv/admin.png",
+          "src": "https://qiniu.xxgtalk.cn/resume/pv/admin.png",
           "title": "企业管理员"
         },
         {
-          "src": "http://qiniu.xxgtalk.cn/resume/pv/baogao.png",
+          "src": "https://qiniu.xxgtalk.cn/resume/pv/baogao.png",
           "title": "pv报告管理"
         },
         {
-          "src": "http://qiniu.xxgtalk.cn/resume/pv/status.png",
+          "src": "https://qiniu.xxgtalk.cn/resume/pv/status.png",
           "title": "流程状态"
         },
         {
-          "src": "http://qiniu.xxgtalk.cn/resume/pv/zsy.png",
+          "src": "https://qiniu.xxgtalk.cn/resume/pv/zsy.png",
           "title": "响应式布局"
         }
       ]
     },
     {
       "name": "Wetrial临床试验平台",
-      "url": "http://www.wetrial.com",
+      "url": "https://www.wetrial.com",
       "descriptions": [
         {
           "header": "产品介绍",
@@ -210,42 +210,42 @@
       ],
       "images": [
         {
-          "src": "http://qiniu.xxgtalk.cn/resume/cts/message.png",
+          "src": "https://qiniu.xxgtalk.cn/resume/cts/message.png",
           "title": "消息"
         },
         {
-          "src": "http://qiniu.xxgtalk.cn/resume/cts/progressAssignUser.png",
+          "src": "https://qiniu.xxgtalk.cn/resume/cts/progressAssignUser.png",
           "title": "指派责任人"
         },
         {
-          "src": "http://qiniu.xxgtalk.cn/resume/cts/progressComment.png",
+          "src": "https://qiniu.xxgtalk.cn/resume/cts/progressComment.png",
           "title": "评论"
         },
         {
-          "src": "http://qiniu.xxgtalk.cn/resume/cts/progressDrag.png",
+          "src": "https://qiniu.xxgtalk.cn/resume/cts/progressDrag.png",
           "title": "项目管理拖拽"
         },
         {
-          "src": "http://qiniu.xxgtalk.cn/resume/cts/progressEdit.png",
+          "src": "https://qiniu.xxgtalk.cn/resume/cts/progressEdit.png",
           "title": "项目管理编辑"
         },
         {
-          "src": "http://qiniu.xxgtalk.cn/resume/cts/progressListEdit.png",
+          "src": "https://qiniu.xxgtalk.cn/resume/cts/progressListEdit.png",
           "title": "项目管理列表编辑"
         },
         {
-          "src": "http://qiniu.xxgtalk.cn/resume/cts/progressMyTaskGroupByProject.png",
+          "src": "https://qiniu.xxgtalk.cn/resume/cts/progressMyTaskGroupByProject.png",
           "title": "我的任务分组"
         },
         {
-          "src": "http://qiniu.xxgtalk.cn/resume/cts/projectCollect.png",
+          "src": "https://qiniu.xxgtalk.cn/resume/cts/projectCollect.png",
           "title": "项目统计"
         }
       ]
     },
     {
       "name": "天马奇兵-跨境电商转运系统",
-      "url": "http://www.spacehorse.cn",
+      "url": "https://www.spacehorse.cn",
       "descriptions": [
         {
           "header": "产品介绍",
@@ -270,35 +270,35 @@
       ],
       "images": [
         {
-          "src": "http://qiniu.xxgtalk.cn/resume/spacehorse/01home.png",
+          "src": "https://qiniu.xxgtalk.cn/resume/spacehorse/01home.png",
           "title": "首页"
         },
         {
-          "src": "http://qiniu.xxgtalk.cn/resume/spacehorse/02home.png",
+          "src": "https://qiniu.xxgtalk.cn/resume/spacehorse/02home.png",
           "title": "支持国家"
         },
         {
-          "src": "http://qiniu.xxgtalk.cn/resume/spacehorse/02login.png",
+          "src": "https://qiniu.xxgtalk.cn/resume/spacehorse/02login.png",
           "title": "登录"
         },
         {
-          "src": "http://qiniu.xxgtalk.cn/resume/spacehorse/03memberCenter.png",
+          "src": "https://qiniu.xxgtalk.cn/resume/spacehorse/03memberCenter.png",
           "title": "会员中心"
         },
         {
-          "src": "http://qiniu.xxgtalk.cn/resume/spacehorse/05package2.png",
+          "src": "https://qiniu.xxgtalk.cn/resume/spacehorse/05package2.png",
           "title": "包裹快递"
         },
         {
-          "src": "http://qiniu.xxgtalk.cn/resume/spacehorse/06warehouse.png",
+          "src": "https://qiniu.xxgtalk.cn/resume/spacehorse/06warehouse.png",
           "title": "仓库"
         },
         {
-          "src": "http://qiniu.xxgtalk.cn/resume/spacehorse/cost.png",
+          "src": "https://qiniu.xxgtalk.cn/resume/spacehorse/cost.png",
           "title": "费用"
         },
         {
-          "src": "http://qiniu.xxgtalk.cn/resume/spacehorse/costCalc.png",
+          "src": "https://qiniu.xxgtalk.cn/resume/spacehorse/costCalc.png",
           "title": "计算器"
         }
       ]
@@ -327,36 +327,36 @@
       ],
       "images": [
         {
-          "src": "http://qiniu.xxgtalk.cn/resume/hdaya/home.png",
+          "src": "https://qiniu.xxgtalk.cn/resume/hdaya/home.png",
           "title": "Home"
         },
         {
-          "src": "http://qiniu.xxgtalk.cn/resume/hdaya/MainQuickKey.png",
+          "src": "https://qiniu.xxgtalk.cn/resume/hdaya/MainQuickKey.png",
           "title": "Hot Key"
         },
         {
-          "src": "http://qiniu.xxgtalk.cn/resume/hdaya/deleteLog.png",
+          "src": "https://qiniu.xxgtalk.cn/resume/hdaya/deleteLog.png",
           "title": "Delete Log"
         },
 
         {
-          "src": "http://qiniu.xxgtalk.cn/resume/hdaya/invoiceAdvanceSearch.png",
+          "src": "https://qiniu.xxgtalk.cn/resume/hdaya/invoiceAdvanceSearch.png",
           "title": "Advance Search"
         },
         {
-          "src": "http://qiniu.xxgtalk.cn/resume/hdaya/invoiceAmount.png",
+          "src": "https://qiniu.xxgtalk.cn/resume/hdaya/invoiceAmount.png",
           "title": "Invoice Amount"
         },
         {
-          "src": "http://qiniu.xxgtalk.cn/resume/hdaya/invoicePackList.png",
+          "src": "https://qiniu.xxgtalk.cn/resume/hdaya/invoicePackList.png",
           "title": "Invoice Pack List"
         },
         {
-          "src": "http://qiniu.xxgtalk.cn/resume/hdaya/labelPrint.png",
+          "src": "https://qiniu.xxgtalk.cn/resume/hdaya/labelPrint.png",
           "title": "Label Print"
         },
         {
-          "src": "http://qiniu.xxgtalk.cn/resume/hdaya/log.png",
+          "src": "https://qiniu.xxgtalk.cn/resume/hdaya/log.png",
           "title": "Logs"
         }
       ]
@@ -377,7 +377,7 @@
             "在该项目中主要负责前端相关；基于 jquery 和 bootstrap 自定意了一套组件，包含：消息插件、弹窗插件、分页插件、表单插件等",
             "Note:表单插件已经上传到 github",
             "   地址：https://github.com/xiexingen/Bootstrap-SmartForm",
-            "   相关介绍：http://www.cnblogs.com/xiexingen/p/4555416.html"
+            "   相关介绍：https://www.cnblogs.com/xiexingen/p/4555416.html"
           ]
         }
       ],
@@ -387,10 +387,10 @@
       "name": "其他项目",
       "descriptions": [
         {
-          "header": "比如：中国烟草总公司职工进修学院车辆监控指挥智能管理系统、广州市科信局项目申报系统(http://xmgl.gz.gov.cn)"
+          "header": "比如：中国烟草总公司职工进修学院车辆监控指挥智能管理系统、广州市科信局项目申报系统(https://xmgl.gz.gov.cn)"
         }
       ],
-      "url": "http://xmgl.gz.gov.cn",
+      "url": "https://xmgl.gz.gov.cn",
       "images": []
     }
   ],
