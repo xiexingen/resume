@@ -9,6 +9,8 @@
     "sourceMap": true,
     "baseUrl": "./",
     "strict": true,
+    "resolveJsonModule": true,
+    "noImplicitAny": false,
     "paths": {
       "@/*": ["src/*"],
       "@@/*": ["src/.umi/*"]
