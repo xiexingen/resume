@@ -4,6 +4,7 @@ const { winPath } = utils;
 
 export default defineConfig({
   favicon: '/favicon.png',
+  title: '全栈工程师',
   runtimePublicPath: true,
   outputPath: 'docs',
   //publicPath:'/docs/',
@@ -80,7 +81,7 @@ export default defineConfig({
     basePath: '/',
   },
   esbuild: {},
-  chunks: ['react', 'antpeer', 'antd', 'antdesign', 'vendors', 'umi'],
+  chunks: ['react','antpeer','antd','antdesign', 'umi'],
   chainWebpack(config, { webpack }) {
     config.optimization.splitChunks({
       // chunks: 'all',
@@ -92,7 +93,7 @@ export default defineConfig({
         react: {
           name: 'react',
           chunks: 'all',
-          test: /[\\/]node_modules[\\/](react|react-dom|react-router|react-router-dom)[\\/]/,
+          test: /[\\/]node_modules[\\/](react-router|react-router-dom)[\\/]/,
           priority: 12,
         },
         antpeer: {
@@ -110,22 +111,9 @@ export default defineConfig({
         antdesign: {
           name: 'antdesign',
           chunks: 'all',
-          test: /[\\/]node_modules[\\/](@ant-design)[\\/]/,
+          test: /[\\/]node_modules[\\/](react-viewer)[\\/]/,
           priority: 10,
-        },
-        // // 图表库相关
-        // charts: {
-        //   name: 'charts',
-        //   chunks: 'all',
-        //   test: /[\\/]node_modules[\\/](echarts|bizcharts|@antv)[\\/]/,
-        //   priority: 11,
-        // },
-        vendors: {
-          name: 'vendors',
-          chunks: 'all',
-          test: /[\\/]node_modules[\\/]/,
-          priority: 9,
-        },
+        }
       },
     });
   },
@@ -140,4 +128,18 @@ export default defineConfig({
     logLevel: 'info',
     defaultSizes: 'parsed', // stat  // gzip
   },
+  externals: {
+    react: 'React',
+    'react-dom': 'ReactDOM',
+    moment: 'moment',
+    antd: 'antd',
+  },
+  // 引入被 external 库的 scripts
+  scripts: [
+    'https://cdnjs.cloudflare.com/ajax/libs/react/17.0.1/umd/react.production.min.js',
+    'https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.1/umd/react-dom.production.min.js',
+    'https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js',
+    'https://cdnjs.cloudflare.com/ajax/libs/antd/4.8.4/antd.min.js'
+  ],
+  styles: ['https://cdnjs.cloudflare.com/ajax/libs/antd/4.8.4/antd.min.css'],
 });
