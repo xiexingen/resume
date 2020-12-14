@@ -20,7 +20,7 @@ import styles from './index.less';
 export default () => {
   return (
     <div className={styles.normal}>
-      <h1 className={styles.title}>专注于react&.netcore栈</h1>
+      <h1 className={styles.title}>专注于react & .netcore栈</h1>
       <Technical dataSource={technicals} />
       <AboutMe dataSource={opens} />
       <CompanyTimeLine dataSource={companys} />
