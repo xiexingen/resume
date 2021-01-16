@@ -7,7 +7,8 @@ export default defineConfig({
   title: '全栈工程师',
   runtimePublicPath: true,
   outputPath: 'docs',
-  //publicPath:'/docs/',
+  publicPath:'https://cdn.jsdelivr.net/gh/xiexingen/resume/docs/',
+  // base:'/resume/',
   history: {
     type: 'browser',
   },
@@ -128,18 +129,18 @@ export default defineConfig({
     logLevel: 'info',
     defaultSizes: 'parsed', // stat  // gzip
   },
-  externals: {
-    react: 'React',
-    'react-dom': 'ReactDOM',
-    moment: 'moment',
-    antd: 'antd',
-  },
-  // 引入被 external 库的 scripts
-  scripts: [
-    'https://cdnjs.cloudflare.com/ajax/libs/react/17.0.1/umd/react.production.min.js',
-    'https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.1/umd/react-dom.production.min.js',
-    'https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js',
-    'https://cdnjs.cloudflare.com/ajax/libs/antd/4.8.4/antd.min.js'
-  ],
-  styles: ['https://cdnjs.cloudflare.com/ajax/libs/antd/4.8.4/antd.min.css'],
+  // externals: {
+  //   react: 'React',
+  //   'react-dom': 'ReactDOM',
+  //   moment: 'moment',
+  //   antd: 'antd',
+  // },
+  // // 引入被 external 库的 scripts
+  // scripts: [
+  //   'https://cdnjs.cloudflare.com/ajax/libs/react/17.0.1/umd/react.production.min.js',
+  //   'https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.1/umd/react-dom.production.min.js',
+  //   'https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js',
+  //   'https://cdnjs.cloudflare.com/ajax/libs/antd/4.8.4/antd.min.js'
+  // ],
+  // styles: ['https://cdnjs.cloudflare.com/ajax/libs/antd/4.8.4/antd.min.css'],
 });

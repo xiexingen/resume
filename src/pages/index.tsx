@@ -18,6 +18,11 @@ import {
 import styles from './index.less';
 
 export default () => {
+  projects.forEach(item=>{
+    item.images.forEach(item=>{
+      item.src=`${window['publicPath']}${item.src}`
+    })
+  })
   return (
     <div className={styles.normal}>
       <h1 className={styles.title}>专注于react & .netcore栈</h1>

@@ -118,31 +118,31 @@
       ],
       "images": [
         {
-          "src": "https://qiniu.xxgtalk.cn/resume/mini-car/barcode.jpg",
+          "src": "imgs/mini-car/barcode.jpg",
           "title": "小程序二维码"
         },
         {
-          "src": "https://qiniu.xxgtalk.cn/resume/mini-car/home.png",
+          "src": "imgs/mini-car/home.png",
           "title": "首屏"
         },
         {
-          "src": "https://qiniu.xxgtalk.cn/resume/mini-car/list.png",
+          "src": "imgs/mini-car/list.png",
           "title": "车辆列表"
         },
         {
-          "src": "https://qiniu.xxgtalk.cn/resume/mini-car/list-detail.png",
+          "src": "imgs/mini-car/list-detail.png",
           "title": "带部分详情的列表"
         },
         {
-          "src": "https://qiniu.xxgtalk.cn/resume/mini-car/detail.png",
+          "src": "imgs/mini-car/detail.png",
           "title": "车辆详细信息"
         },
         {
-          "src": "https://qiniu.xxgtalk.cn/resume/mini-car/pre-order.png",
+          "src": "imgs/mini-car/pre-order.png",
           "title": "预定|预约试驾"
         },
         {
-          "src": "https://qiniu.xxgtalk.cn/resume/mini-car/me.png",
+          "src": "imgs/mini-car/me.png",
           "title": "个人中心"
         }
       ]
@@ -171,19 +171,19 @@
       ],
       "images": [
         {
-          "src": "https://qiniu.xxgtalk.cn/resume/pv/admin.png",
+          "src": "imgs/pv/admin.png",
           "title": "企业管理员"
         },
         {
-          "src": "https://qiniu.xxgtalk.cn/resume/pv/baogao.png",
+          "src": "imgs/pv/baogao.png",
           "title": "pv报告管理"
         },
         {
-          "src": "https://qiniu.xxgtalk.cn/resume/pv/status.png",
+          "src": "imgs/pv/status.png",
           "title": "流程状态"
         },
         {
-          "src": "https://qiniu.xxgtalk.cn/resume/pv/zsy.png",
+          "src": "imgs/pv/zsy.png",
           "title": "响应式布局"
         }
       ]
@@ -210,35 +210,35 @@
       ],
       "images": [
         {
-          "src": "https://qiniu.xxgtalk.cn/resume/cts/message.png",
+          "src": "imgs/cts/message.png",
           "title": "消息"
         },
         {
-          "src": "https://qiniu.xxgtalk.cn/resume/cts/progressAssignUser.png",
+          "src": "imgs/cts/progressAssignUser.png",
           "title": "指派责任人"
         },
         {
-          "src": "https://qiniu.xxgtalk.cn/resume/cts/progressComment.png",
+          "src": "imgs/cts/progressComment.png",
           "title": "评论"
         },
         {
-          "src": "https://qiniu.xxgtalk.cn/resume/cts/progressDrag.png",
+          "src": "imgs/cts/progressDrag.png",
           "title": "项目管理拖拽"
         },
         {
-          "src": "https://qiniu.xxgtalk.cn/resume/cts/progressEdit.png",
+          "src": "imgs/cts/progressEdit.png",
           "title": "项目管理编辑"
         },
         {
-          "src": "https://qiniu.xxgtalk.cn/resume/cts/progressListEdit.png",
+          "src": "imgs/cts/progressListEdit.png",
           "title": "项目管理列表编辑"
         },
         {
-          "src": "https://qiniu.xxgtalk.cn/resume/cts/progressMyTaskGroupByProject.png",
+          "src": "imgs/cts/progressMyTaskGroupByProject.png",
           "title": "我的任务分组"
         },
         {
-          "src": "https://qiniu.xxgtalk.cn/resume/cts/projectCollect.png",
+          "src": "imgs/cts/projectCollect.png",
           "title": "项目统计"
         }
       ]
@@ -270,35 +270,35 @@
       ],
       "images": [
         {
-          "src": "https://qiniu.xxgtalk.cn/resume/spacehorse/01home.png",
+          "src": "imgs/spacehorse/01home.png",
           "title": "首页"
         },
         {
-          "src": "https://qiniu.xxgtalk.cn/resume/spacehorse/02home.png",
+          "src": "imgs/spacehorse/02home.png",
           "title": "支持国家"
         },
         {
-          "src": "https://qiniu.xxgtalk.cn/resume/spacehorse/02login.png",
+          "src": "imgs/spacehorse/02login.png",
           "title": "登录"
         },
         {
-          "src": "https://qiniu.xxgtalk.cn/resume/spacehorse/03memberCenter.png",
+          "src": "imgs/spacehorse/03memberCenter.png",
           "title": "会员中心"
         },
         {
-          "src": "https://qiniu.xxgtalk.cn/resume/spacehorse/05package2.png",
+          "src": "imgs/spacehorse/05package2.png",
           "title": "包裹快递"
         },
         {
-          "src": "https://qiniu.xxgtalk.cn/resume/spacehorse/06warehouse.png",
+          "src": "imgs/spacehorse/06warehouse.png",
           "title": "仓库"
         },
         {
-          "src": "https://qiniu.xxgtalk.cn/resume/spacehorse/cost.png",
+          "src": "imgs/spacehorse/cost.png",
           "title": "费用"
         },
         {
-          "src": "https://qiniu.xxgtalk.cn/resume/spacehorse/costCalc.png",
+          "src": "imgs/spacehorse/costCalc.png",
           "title": "计算器"
         }
       ]
@@ -327,36 +327,36 @@
       ],
       "images": [
         {
-          "src": "https://qiniu.xxgtalk.cn/resume/hdaya/home.png",
+          "src": "imgs/hdaya/home.png",
           "title": "Home"
         },
         {
-          "src": "https://qiniu.xxgtalk.cn/resume/hdaya/MainQuickKey.png",
+          "src": "imgs/hdaya/MainQuickKey.png",
           "title": "Hot Key"
         },
         {
-          "src": "https://qiniu.xxgtalk.cn/resume/hdaya/deleteLog.png",
+          "src": "imgs/hdaya/deleteLog.png",
           "title": "Delete Log"
         },
 
         {
-          "src": "https://qiniu.xxgtalk.cn/resume/hdaya/invoiceAdvanceSearch.png",
+          "src": "imgs/hdaya/invoiceAdvanceSearch.png",
           "title": "Advance Search"
         },
         {
-          "src": "https://qiniu.xxgtalk.cn/resume/hdaya/invoiceAmount.png",
+          "src": "imgs/hdaya/invoiceAmount.png",
           "title": "Invoice Amount"
         },
         {
-          "src": "https://qiniu.xxgtalk.cn/resume/hdaya/invoicePackList.png",
+          "src": "imgs/hdaya/invoicePackList.png",
           "title": "Invoice Pack List"
         },
         {
-          "src": "https://qiniu.xxgtalk.cn/resume/hdaya/labelPrint.png",
+          "src": "imgs/hdaya/labelPrint.png",
           "title": "Label Print"
         },
         {
-          "src": "https://qiniu.xxgtalk.cn/resume/hdaya/log.png",
+          "src": "imgs/hdaya/log.png",
           "title": "Logs"
         }
       ]
