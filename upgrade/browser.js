@@ -1,1 +1,79 @@
-(function(){function e(){var e=navigator.userAgent,t=e.indexOf("compatible")>-1&&e.indexOf("MSIE")>-1,n=e.indexOf("Edge")>-1&&!t,d=e.indexOf("Trident")>-1&&e.indexOf("rv:11.0")>-1;if(t){var i=new RegExp("MSIE (\\d+\\.\\d+);");i.test(e);var r=parseFloat(RegExp["$1"]);return 7===r?7:8===r?8:9===r?9:10===r?10:6}return n?"edge":d?11:-1}function t(){return-1!==window.location.pathname.indexOf("/upgrade/index.html")}function n(e){var t=e||window.event,n=t.target||t.srcElement,d=n.type||n.getAttribute("type"),i=n.readOnly,r=n.disabled;i=void 0!==i&&i,r=void 0===r||r;var o=8===t.keyCode&&("password"===d||"text"===d||"textarea"===d)&&(!0===i||!0===r),a=8===t.keyCode&&"password"!==d&&"text"!==d&&"textarea"!==d;if(a||o)return!1}var d=e(),i=t(),r=navigator.userAgent.indexOf("Windows NT 5")>-1;r&&i&&document.getElementById("xplink").setAttribute("style","display:none"),-1===d||"edge"===d?i&&(window.location.href="/"):(document.onkeypress=n,document.onkeydown=n,i||(window.location.href=window.publicPath+"upgrade/index.html"))})(window);
+﻿/* eslint-disable eslint-comments/disable-enable-pair */
+/* eslint-disable */
+(function () {
+  // 获取浏览器版本
+  function getIEVersion() {
+    var userAgent = navigator.userAgent; // 取得浏览器的userAgent字符串
+    var isIE = userAgent.indexOf('compatible') > -1 && userAgent.indexOf('MSIE') > -1; // 判断是否IE<11浏览器
+    var isEdge = userAgent.indexOf('Edge') > -1 && !isIE; // 判断是否IE的Edge浏览器
+    var isIE11 = userAgent.indexOf('Trident') > -1 && userAgent.indexOf('rv:11.0') > -1;
+
+
+    if (isIE) {
+      var reIE = new RegExp('MSIE (\\d+\\.\\d+);');
+      reIE.test(userAgent);
+      var fIEVersion = parseFloat(RegExp['$1']);
+      if (fIEVersion === 7) {
+        return 7;
+      } else if (fIEVersion === 8) {
+        return 8;
+      } else if (fIEVersion === 9) {
+        return 9;
+      } else if (fIEVersion === 10) {
+        return 10;
+      } else {
+        return 6; // IE版本<=7
+      }
+    } else if (isEdge) {
+      return 'edge'; // edge
+    } else if (isIE11) {
+      return 11; // IE11
+    } else {
+      return -1; // 不是ie浏览器
+    }
+  }
+
+  // 判断当前页面是否是升级提示页面
+  function isGradePage() {
+    return window.location.pathname.indexOf('/upgrade/index.html') !== -1;
+  }
+
+  // 禁止Backsoace回退
+  function forbidBackSpace(e) {
+    var ev = e || window.event;
+    var obj = ev.target || ev.srcElement;
+    var t = obj.type || obj.getAttribute('type');
+    var vReadOnly = obj.readOnly;
+    var vDisabled = obj.disabled;
+    vReadOnly = vReadOnly === undefined ? false : vReadOnly;
+    vDisabled = vDisabled === undefined ? true : vDisabled;
+    var flag1 =
+      ev.keyCode === 8 &&
+      (t === 'password' || t === 'text' || t === 'textarea') &&
+      (vReadOnly === true || vDisabled === true);
+    var flag2 = ev.keyCode === 8 && t !== 'password' && t !== 'text' && t !== 'textarea';
+    if (flag2 || flag1) return false;
+  }
+
+  var version = getIEVersion();
+  var isTipPage = isGradePage();
+  var isXP = navigator.userAgent.indexOf('Windows NT 5') > -1; //判断是否xp系统
+
+  //xp系统隐藏edge浏览器链接
+  if (isXP && isTipPage) {
+    document.getElementById('xplink').setAttribute('style', 'display:none')
+  }
+
+  // 不支持IE低版本浏览器
+  if (version === -1 || version === 'edge') { // || version === 11
+    if (isTipPage) {
+      window.location.href = '/';
+    }
+  } else {
+    document.onkeypress = forbidBackSpace;
+    document.onkeydown = forbidBackSpace;
+    if (!isTipPage) {
+      window.location.href = window.publicPath + 'upgrade/index.html';
+    }
+  }
+})(window);
