@@ -1,5 +1,5 @@
 {
-  "private": true,
+  "version": "1.0.0",
   "scripts": {
     "start": "umi dev",
     "build": "umi build",
@@ -7,7 +7,10 @@
     "postinstall": "umi generate tmp",
     "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
     "test": "umi-test",
-    "test:coverage": "umi-test --coverage"
+    "test:coverage": "umi-test --coverage",
+    "patch": "yarn version --patch && git push origin master && git push origin --tags",
+    "minor": "yarn version --minor && git push origin master && git push origin --tags",
+    "major": "yarn version --major && git push origin master && git push origin --tags"
   },
   "gitHooks": {
     "pre-commit": "lint-staged"

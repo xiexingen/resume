@@ -6,7 +6,7 @@ export default defineConfig({
   favicon: '/favicon.png',
   title: '全栈工程师',
   runtimePublicPath: true,
-  outputPath: 'docs',
+  outputPath: 'dist',
   publicPath:'https://cdn.jsdelivr.net/gh/xiexingen/resume/docs/',
   // base:'/resume/',
   history: {
