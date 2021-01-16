@@ -24,4 +24,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages
           FOLDER: 'dist/'
-          BUILD_SCRIPT: npm && npm run build
+          BUILD_SCRIPT: npm run build
