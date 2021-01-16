@@ -7,7 +7,7 @@ export default defineConfig({
   title: '个人简历(前端)',
   runtimePublicPath: true,
   outputPath: 'dist',
-  publicPath:'https://cdn.jsdelivr.net/gh/xiexingen/resume@gh-pages/docs/',
+  publicPath:'https://cdn.jsdelivr.net/gh/xiexingen/resume@gh-pages/',
   // base:'/resume/',
   history: {
     type: 'browser',
