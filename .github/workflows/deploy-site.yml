@@ -10,18 +10,20 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@master
-      - run: npm i
+        uses: actions/checkout@v2.3.1
+        with:
+          persist-credentials: false
+
+      - name: Install and Build
+        run: |
+          npm install
+          npm run build
       # - run: npm run tsc
-      - name: Build and Deploy
-        uses: JamesIves/github-pages-deploy-action@master
-        env:
-          CI: true
-          PROGRESS: none
-          GIT_CONFIG_NAME: xiexingen
-          GIT_CONFIG_EMAIL: 1002275364@qq.com
-          NODE_OPTIONS: --max_old_space_size=4096
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@3.7.1
+        with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages
-          FOLDER: 'dist/'
-          BUILD_SCRIPT: npm run build
+          FOLDER: dist
+          CLEAN: true # Automatically remove deleted files from the deploy branch
