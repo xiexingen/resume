@@ -19,6 +19,6 @@ jobs:
           CI: true
           PROGRESS: none
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: master
+          BRANCH: gh-pages
           FOLDER: 'dist/'
           BUILD_SCRIPT: npm run build

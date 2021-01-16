@@ -4,10 +4,10 @@ const { winPath } = utils;
 
 export default defineConfig({
   favicon: '/favicon.png',
-  title: '全栈工程师',
+  title: '个人简历(前端)',
   runtimePublicPath: true,
   outputPath: 'dist',
-  publicPath:'https://cdn.jsdelivr.net/gh/xiexingen/resume/docs/',
+  publicPath:'https://cdn.jsdelivr.net/gh/xiexingen/resume@gh-pages/docs/',
   // base:'/resume/',
   history: {
     type: 'browser',
