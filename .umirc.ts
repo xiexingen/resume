@@ -81,7 +81,7 @@ export default defineConfig({
   manifest: {
     basePath: '/',
   },
-  // esbuild: {},
+  esbuild: {},
   chunks: ['react','antpeer','antd','antdesign', 'umi'],
   chainWebpack(config, { webpack }) {
     config.optimization.splitChunks({
