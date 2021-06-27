@@ -17,15 +17,32 @@
     },
     {
       "company": "湖南微试云医疗",
-      "dateRange": "2018.09-至今",
+      "dateRange": "2018.09-2021.07",
       "description": "转为前端岗位，负责公司前端架构选型，将之前的技术栈迁移到react+antd的技术栈、将前端重构为微前端形式,负责通用组件的开发、维护任务以及公司前端的培训事宜;公司github地址:https://github.com/wetrial"
     }
   ],
   "educations": [
     {
+      "name": "湖南信息职业技术学院",
+      "type": "专科",
+      "profession": "计算机软件技术",
+      "dateRange":"2010-2013",
+       "tagInfo":{
+         "short":"全",
+         "color":"success",
+         "full":"全日制"
+       }
+    },
+    {
       "name": "中南林业科技大学",
       "type": "本科",
-      "profession": "计算机科学与技术"
+      "profession": "计算机科学与技术",
+      "dateRange":"2014-2016",
+      "tagInfo":{
+        "short":"函",
+        "color":"processing",
+        "full":"函授"
+      }
     }
   ],
   "socials": [

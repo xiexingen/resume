@@ -1,5 +1,6 @@
 import React from 'react';
-import { List, Avatar, Card, Divider } from 'antd';
+import { List, Avatar, Card, Divider, Tag, Tooltip } from 'antd';
+import styles from './index.less';
 
 export default function (props) {
   const { dataSource } = props;
@@ -11,7 +12,15 @@ export default function (props) {
         grid={{ gutter: 16, xs: 2, sm: 2, md: 4, lg: 4, xl: 4, xxl: 4 }}
         split={false}
         renderItem={(item: any) => (
-          <List.Item>
+          <List.Item
+            extra={
+              <Tooltip title={item.tagInfo.full} color="purple">
+                <Tag className={styles.tag} color={item.tagInfo.color}>
+                  {item.tagInfo.short}
+                </Tag>
+              </Tooltip>
+            }
+          >
             <Card>
               <Card.Meta
                 avatar={

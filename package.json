@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
   "scripts": {
-    "start": "umi dev",
+    "start": "cross-env UMI_ENV=dev umi dev",
     "build": "umi build",
     "analyze": "cross-env ANALYZE=1 umi build",
     "postinstall": "umi generate tmp",
@@ -24,20 +24,20 @@
     ]
   },
   "dependencies": {
-    "@ant-design/icons": "^4.3.0",
-    "@ant-design/pro-layout": "^6.10.9",
-    "antd": "^4.10.2",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
+    "@ant-design/icons": "^4.6.2",
+    "@ant-design/pro-layout": "^6.19.7",
+    "antd": "^4.16.5",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "react-viewer": "^3.2.2"
   },
   "devDependencies": {
-    "@umijs/plugin-esbuild": "^1.1.0",
-    "@umijs/preset-react": "^1.7.12",
-    "@umijs/test": "^3.3.5",
+    "@umijs/plugin-esbuild": "^1.3.1",
+    "@umijs/preset-react": "^1.8.13",
+    "@umijs/test": "^3.4.25",
     "cross-env": "^7.0.3",
-    "lint-staged": "^10.5.3",
-    "prettier": "^2.2.1",
-    "umi": "^3.3.5"
+    "lint-staged": "^11.0.0",
+    "prettier": "^2.3.1",
+    "umi": "^3.4.25"
   }
 }

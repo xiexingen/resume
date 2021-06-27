@@ -5,6 +5,7 @@ import Social from '@/components/Social';
 import Concat from '@/components/Concat';
 import Project from '@/components/Project';
 import Technical from '@/components/Technical';
+// import Introduce from '@/components/Introduce'
 import AboutMe from '@/components/AboutMe';
 import {
   technicals,
@@ -25,7 +26,7 @@ export default () => {
   })
   return (
     <div className={styles.normal}>
-      <h1 className={styles.title}>专注于react & .netcore栈</h1>
+      {/* <Introduce/> */}
       <Technical dataSource={technicals} />
       <AboutMe dataSource={opens} />
       <CompanyTimeLine dataSource={companys} />
