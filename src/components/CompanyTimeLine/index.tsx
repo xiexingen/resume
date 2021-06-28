@@ -1,7 +1,6 @@
 import React from 'react';
 import { Timeline, Card, Divider } from 'antd';
 import { ClockCircleOutlined } from '@ant-design/icons';
-import styles from './index.less';
 
 export default function (props) {
   const { dataSource } = props;
@@ -15,15 +14,15 @@ export default function (props) {
   };
 
   return (
-    <Card className="small-card" bordered={false}>
+    <Card className="small-card company-time-line" bordered={false}>
       <Divider>工作经历</Divider>
       <Timeline reverse>
         {dataSource.map((item, index) => {
           return (
             <Timeline.Item key={index} {...getDotByLast(index)}>
-              <div className={styles['title-line']}>
+              <div className="title-line">
                 {item.company}
-                <span className={styles.date}>{item.dateRange}</span>
+                <span className="date">{item.dateRange}</span>
               </div>
               <p>{item.description}</p>
             </Timeline.Item>
