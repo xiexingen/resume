@@ -4,7 +4,6 @@ import { Collapse, Card, Divider, Skeleton, Row, Col, List } from 'antd';
 import { LinkOutlined } from '@ant-design/icons';
 
 import ImageViewer from '../ImageViewer';
-import styles from './index.less';
 
 class Index extends PureComponent<any, any> {
   state = {
@@ -116,7 +115,7 @@ class Index extends PureComponent<any, any> {
                   active
                   avatar
                 >
-                  <Row className={styles['project-row']} {...rowProps}>
+                  <Row className="project-row" {...rowProps}>
                     {item.images.map((imgItem, imgIndex) => (
                       <Col key={imgIndex} {...colItemLayout}>
                         <Card

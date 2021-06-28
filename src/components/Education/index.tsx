@@ -1,11 +1,10 @@
 import React from 'react';
 import { List, Avatar, Card, Divider, Tag, Tooltip } from 'antd';
-import styles from './index.less';
 
 export default function (props) {
   const { dataSource } = props;
   return (
-    <Card className="small-card" bordered={false}>
+    <Card className="small-card education" bordered={false}>
       <Divider>教育经历</Divider>
       <List
         dataSource={dataSource}
@@ -15,7 +14,7 @@ export default function (props) {
           <List.Item
             extra={
               <Tooltip title={item.tagInfo.full} color="purple">
-                <Tag className={styles.tag} color={item.tagInfo.color}>
+                <Tag className="tag" color={item.tagInfo.color}>
                   {item.tagInfo.short}
                 </Tag>
               </Tooltip>
