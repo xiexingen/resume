@@ -107,10 +107,8 @@
   ],
   "technicals": [
     "React、Antd、TypeScript、Webpack、Nodejs、Vue、ElementUI、umi、taro、uni-app",
-    ".NETCore、SqlServer、Dapper、EF、PetaPoco",
-    "Signalr、ABP、DDD、Redis、RabbitMQ、IdentityServer",
-    "CAP、Consul、Ocelot、微服务、Polly、OChars、微信公众号、微信小程序",
-    "Docker、CICD、GitLab、Linux",
+    ".NETCore、SqlServer、Dapper、EF、PetaPoco、ABP、Redis、MongoDB",
+    "Docker、CICD、Linux",
     "第三方支付、第三方登录、快递接口、短信接口、web快递单打印、条码打印、导出excel,word,pdf等常用第三的东西"
   ],
   "projects": [
@@ -417,6 +415,12 @@
       "title": "ArtiPub",
       "subTitle": "业余时间参与的ArtiPub云端版本的开发",
       "detail": "ArtiPub (Article Publisher的简称，意为\"文章发布者\")是一款开源的一文多发平台，可以帮助文章作者将编写好的文章自动发布到掘金、SegmentFault、CSDN、知乎、开源中国等技术媒体平台，传播优质知识，获取最大的曝光度。ArtiPub安装简单，提供了多种安装方式，可以一键安装使用，安装一般只要5分钟。ArtiPub目前支持文章编辑、文章发布、数据统计的功能，后期我们会加入存量文章导入、数据分析的功能，让您更好的管理、优化您的技术文章。此外，我们还会接入更多媒体渠道，真正做到让文章随处可阅。"
+    },
+    {
+      "github": "https://github.com/nomui/nomui",
+      "title": "nomui",
+      "subTitle": "统筹nomui的整体开发工作，包括自动发布、组件开发、文档编写等",
+      "detail": "一套企业内部的组件库，重复的造轮子。"
     },
     {
       "github": "https://github.com/wetrial",

@@ -5,7 +5,7 @@ import Social from '@/components/Social';
 import Concat from '@/components/Concat';
 import Project from '@/components/Project';
 import Technical from '@/components/Technical';
-// import Introduce from '@/components/Introduce'
+import Introduce from '@/components/Introduce'
 import AboutMe from '@/components/AboutMe';
 import {
   technicals,
@@ -26,7 +26,7 @@ export default () => {
   })
   return (
     <div className={styles.normal}>
-      {/* <Introduce/> */}
+      <Introduce/>
       <Technical dataSource={technicals} />
       <AboutMe dataSource={opens} />
       <CompanyTimeLine dataSource={companys} />
