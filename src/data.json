@@ -18,7 +18,12 @@
     {
       "company": "湖南微试云医疗",
       "dateRange": "2018.09-2021.07",
-      "description": "转为前端岗位，负责公司前端架构选型，将之前的技术栈迁移到react+antd的技术栈、将前端重构为微前端形式,负责通用组件的开发、维护任务以及公司前端的培训事宜;公司github地址:https://github.com/wetrial"
+      "description": "转为前端岗位，负责公司前端架构选型，将之前的技术栈迁移到react+antd的技术栈、将前端重构为微前端形式,负责通用组件的开发、维护任务以及公司前端的培训事宜;公司 github地址:https://github.com/wetrial、https://github.com/nomui/nomui"
+    },
+    {
+      "company": "安克创新",
+      "dateRange": "2021.07-目前",
+      "description": "负责客服云系统的前端开发工作"
     }
   ],
   "educations": [
@@ -47,10 +52,22 @@
   ],
   "socials": [
     {
-      "icon": "CrownOutlined",
-      "url": "https://blog.xxgtalk.cn",
-      "title": "个人博客",
+      "icon": "HighlightOutlined",
+      "url": "https://xiexingen.github.io/hand-tear-ahooks/hooks/async/use-request",
+      "title": "手撕ahooks",
+      "description": "学习研究ahooks源码"
+    },
+    {
+      "icon": "CloudOutlined",
+      "url": "https://xiexingen.github.io/frontend-study/note/style/grid",
+      "title": "个人学习笔记",
       "description": "个人经验、踩过的坑、心得、笔记等"
+    },
+    {
+      "icon": "CrownOutlined",
+      "url": "https://github.com/xiexingen/frontend-study",
+      "title": "个人博客",
+      "description": "个人博客分享"
     },
     {
       "icon": "GithubOutlined",
