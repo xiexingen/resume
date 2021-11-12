@@ -2,8 +2,8 @@ name: Deploy Site
 
 on:
   push:
-    tags:
-      - 'v*'
+    branches:
+      - master # default branch
 
 jobs:
   build-and-deploy:
