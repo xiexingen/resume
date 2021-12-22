@@ -2,28 +2,18 @@
   "companys": [
     {
       "company": "广州奔步电脑",
-      "dateRange": "2012.11-2015.08",
-      "description": "新项目的研发、技术升级、框架的支持等"
-    },
-    {
-      "company": "广州灵酷",
-      "dateRange": "2015.08-2016.04",
-      "description": "在该系统中负责整个系统的功能设计、开发(如：订单、充值、提现、支付、快递查询、短信邮件通知、web 快递单打印、条码打印、第三方登录…)相关事情"
+      "dateRange": "2012.11-2016.04",
+      "description": "新项目的开发(如：订单、充值、提现、支付、快递查询、短信邮件通知、web 快递单打印、条码打印、第三方登录…)相关事情、技术升级、框架的支持等"
     },
     {
       "company": "湖南微试云医疗",
       "dateRange": "2016.04-2018.09",
-      "description": "负责Wetrial平台进度管理模块、维护&&提供基础组件(前端、后端)、后端消息推送、基础组件开发等工作。"
-    },
-    {
-      "company": "湖南微试云医疗",
-      "dateRange": "2018.09-2021.07",
-      "description": "转为前端岗位，负责公司前端架构选型，将之前的技术栈迁移到react+antd的技术栈、将前端重构为微前端形式,负责通用组件的开发、维护任务以及公司前端的培训事宜;公司 github地址:https://github.com/wetrial、https://github.com/nomui/nomui"
+      "description": "负责公司整体前端架构、基础组件研发和维护；为业务开发人员提供培训、完善开发文档等；公司 github地址:https://github.com/wetrial、https://github.com/nomui/nomui"
     },
     {
       "company": "安克创新",
       "dateRange": "2021.07-目前",
-      "description": "负责客服云系统的前端开发工作"
+      "description": "技术栈为vue+vuetify+nuxt的ssr，负责业务的开发迭代、抽取基建；负责了如:多语言硬编码的lint工具、基础filter组件等"
     }
   ],
   "educations": [
@@ -124,6 +114,7 @@
   ],
   "technicals": [
     "React、Antd、TypeScript、Webpack、Nodejs、Vue、ElementUI、umi、taro、uni-app",
+    "AST、低代码等",
     ".NETCore、SqlServer、Dapper、EF、PetaPoco、ABP、Redis、MongoDB",
     "Docker、CICD、Linux",
     "第三方支付、第三方登录、快递接口、短信接口、web快递单打印、条码打印、导出excel,word,pdf等常用第三的东西"
@@ -414,25 +405,9 @@
         }
       ],
       "images": []
-    },
-    {
-      "name": "其他项目",
-      "descriptions": [
-        {
-          "header": "比如：中国烟草总公司职工进修学院车辆监控指挥智能管理系统、广州市科信局项目申报系统(https://xmgl.gz.gov.cn)"
-        }
-      ],
-      "url": "https://xmgl.gz.gov.cn",
-      "images": []
     }
   ],
   "opens": [
-    {
-      "github": "https://github.com/crawlab-team/artipub",
-      "title": "ArtiPub",
-      "subTitle": "业余时间参与的ArtiPub云端版本的开发",
-      "detail": "ArtiPub (Article Publisher的简称，意为\"文章发布者\")是一款开源的一文多发平台，可以帮助文章作者将编写好的文章自动发布到掘金、SegmentFault、CSDN、知乎、开源中国等技术媒体平台，传播优质知识，获取最大的曝光度。ArtiPub安装简单，提供了多种安装方式，可以一键安装使用，安装一般只要5分钟。ArtiPub目前支持文章编辑、文章发布、数据统计的功能，后期我们会加入存量文章导入、数据分析的功能，让您更好的管理、优化您的技术文章。此外，我们还会接入更多媒体渠道，真正做到让文章随处可阅。"
-    },
     {
       "github": "https://github.com/nomui/nomui",
       "title": "nomui",
@@ -449,7 +424,13 @@
       "github": "https://github.com/xiexingen",
       "title": "个人项目",
       "subTitle": "工作这些年积累和贡献的个人代码库",
-      "detail": "涉及后端、jquery插件、taro、微信小程序、umi、antd、electron、abp、爬虫等。"
+      "detail": "涉及后端、jquery插件、taro、uni-app、微信小程序、umi、antd、ahooks、abp、爬虫等。"
+    },
+    {
+      "github": "https://github.com/crawlab-team/artipub",
+      "title": "ArtiPub",
+      "subTitle": "业余时间参与的ArtiPub云端版本的开发",
+      "detail": "ArtiPub (Article Publisher的简称，意为\"文章发布者\")是一款开源的一文多发平台，可以帮助文章作者将编写好的文章自动发布到掘金、SegmentFault、CSDN、知乎、开源中国等技术媒体平台，传播优质知识，获取最大的曝光度。ArtiPub安装简单，提供了多种安装方式，可以一键安装使用，安装一般只要5分钟。ArtiPub目前支持文章编辑、文章发布、数据统计的功能，后期我们会加入存量文章导入、数据分析的功能，让您更好的管理、优化您的技术文章。此外，我们还会接入更多媒体渠道，真正做到让文章随处可阅。"
     }
   ]
 }

@@ -20,6 +20,9 @@ export default () => {
           写过业务页面、搭过基础框架、做过项目管理、也造过前端组件轮子，写过的组件如：拖拽滑块验证码、手写签名、基于lodop的web打印、基于UEditor形式的表单设计器、基于TinyMCE的关键词高亮、自定义json形式的表单设计器、基于signalr的推送、加密传输、token失效自动刷新等等...
         </Paragraph>
         <Paragraph>
+          基于ast写过用来检测代码硬编码的eslint插件，关注一些如低代码的东西
+        </Paragraph>
+        <Paragraph>
           典型的代表作
           <Button
             type="link"

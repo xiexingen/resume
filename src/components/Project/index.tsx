@@ -29,7 +29,7 @@ class Index extends PureComponent<any, any> {
       const activeItem = curNode.getElementsByClassName(
         'ant-collapse-item-active',
       )[0];
-      activeItem.scrollIntoView && activeItem.scrollIntoView();
+      activeItem?.scrollIntoView && activeItem?.scrollIntoView?.();
     }
   };
 

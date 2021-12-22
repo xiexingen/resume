@@ -28,11 +28,11 @@ export default () => {
     <div className={styles.normal}>
       <Introduce/>
       <Technical dataSource={technicals} />
+      <Social dataSource={socials} />
       <AboutMe dataSource={opens} />
       <CompanyTimeLine dataSource={companys} />
       <Education dataSource={educations} />
       <Project dataSource={projects} />
-      <Social dataSource={socials} />
       <Concat dataSource={concats} />
     </div>
   );
