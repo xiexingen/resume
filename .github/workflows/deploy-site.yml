@@ -1,9 +1,9 @@
-name: Deploy Site
+name: github pages
 
 on:
   push:
-    tags:
-      - 'v*'
+    branches:
+      - master # default branch
 
 jobs:
   build-and-deploy:
