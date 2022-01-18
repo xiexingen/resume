@@ -8,6 +8,7 @@ export default defineConfig({
   runtimePublicPath: true,
   outputPath: 'dist',
   publicPath:'https://cdn.jsdelivr.net/gh/xiexingen/resume@gh-pages/',
+  // publicPath:'https://github.com.cnpmjs.org/xiexingen/resume/tree/gh-pages/',
   // base:'/resume/',
   history: {
     type: 'browser',
