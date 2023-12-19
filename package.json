@@ -1,45 +1,24 @@
 {
-  "version": "1.0.0",
+  "private": true,
+  "author": "xiexingen <1002275364@qq.com>",
   "scripts": {
-    "start": "cross-env UMI_ENV=dev umi dev",
+    "dev": "umi dev",
     "build": "umi build",
-    "deploy": "gh-pages -d dist",
-    "analyze": "cross-env ANALYZE=1 umi build",
-    "postinstall": "umi generate tmp",
-    "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
-    "test": "umi-test",
-    "test:coverage": "umi-test --coverage",
-    "patch": "yarn version --patch && git push origin master && git push origin --tags",
-    "minor": "yarn version --minor && git push origin master && git push origin --tags",
-    "major": "yarn version --major && git push origin master && git push origin --tags"
-  },
-  "gitHooks": {
-    "pre-commit": "lint-staged"
-  },
-  "lint-staged": {
-    "*.{js,jsx,less,md,json}": [
-      "prettier --write"
-    ],
-    "*.ts?(x)": [
-      "prettier --parser=typescript --write"
-    ]
+    "postinstall": "umi setup",
+    "setup": "umi setup",
+    "start": "npm run dev"
   },
   "dependencies": {
-    "@ant-design/icons": "^4.7.0",
-    "@ant-design/pro-layout": "^6.27.2",
-    "antd": "^4.16.13",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "@ant-design/icons": "^5.2.6",
+    "@ant-design/pro-layout": "^7.17.16",
+    "add": "^2.0.6",
+    "antd": "^5.12.4",
     "react-viewer": "^3.2.2"
   },
   "devDependencies": {
-    "@umijs/plugin-esbuild": "^1.4.1",
-    "@umijs/preset-react": "^1.8.26",
-    "@umijs/test": "^3.5.20",
-    "cross-env": "^7.0.3",
-    "gh-pages": "^3.2.3",
-    "lint-staged": "^11.0.0",
-    "prettier": "^2.4.1",
-    "umi": "^3.5.20"
+    "@types/react": "^18.2.45",
+    "@types/react-dom": "^18.2.18",
+    "typescript": "^5.3.3",
+    "umi": "^4.0.89"
   }
 }

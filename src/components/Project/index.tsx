@@ -126,7 +126,7 @@ class Index extends PureComponent<any, any> {
                             item.images,
                             imgIndex,
                           )}
-                          cover={<img alt={imgItem.title} src={imgItem.src} />}
+                          cover={<img alt={imgItem.title} src={`/${imgItem.src}`} />}
                         >
                           <Card.Meta description={imgItem.title} />
                         </Card>

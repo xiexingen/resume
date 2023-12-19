@@ -7,33 +7,21 @@ import Project from '@/components/Project';
 import Technical from '@/components/Technical';
 import Introduce from '@/components/Introduce'
 import AboutMe from '@/components/AboutMe';
-import {
-  technicals,
-  opens,
-  companys,
-  educations,
-  projects,
-  socials,
-  concats,
-} from '../data.json';
+
+import mockData from '../data.json';
 import styles from './index.less';
 
 export default () => {
-  projects.forEach(item=>{
-    item.images.forEach(item=>{
-      item.src=`${window['publicPath']}${item.src}`
-    })
-  })
   return (
     <div className={styles.normal}>
       <Introduce/>
-      <Technical dataSource={technicals} />
-      <Social dataSource={socials} />
-      <AboutMe dataSource={opens} />
-      <CompanyTimeLine dataSource={companys} />
-      <Education dataSource={educations} />
-      <Project dataSource={projects} />
-      <Concat dataSource={concats} />
+      <Technical dataSource={mockData.technicals} />
+      <Social dataSource={mockData.socials} />
+      <AboutMe dataSource={mockData.opens} />
+      <CompanyTimeLine dataSource={mockData.companys} />
+      <Education dataSource={mockData.educations} />
+      <Project dataSource={mockData.projects} />
+      <Concat dataSource={mockData.concats} />
     </div>
   );
 };

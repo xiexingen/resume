@@ -8,12 +8,17 @@
     {
       "company": "湖南微试云医疗",
       "dateRange": "2016.04-2018.09",
-      "description": "负责公司整体前端架构、基础组件研发和维护；为业务开发人员提供培训、完善开发文档等；公司 github地址:https://github.com/wetrial、https://github.com/nomui/nomui"
+      "description": "负责公司整体前端架构、基础组件研发和维护；为业务开发人员提供培训、完善开发文档等；公司 github 地址:https://github.com/wetrial、https://github.com/nomui/nomui"
     },
     {
       "company": "安克创新",
-      "dateRange": "2021.07-目前",
-      "description": "技术栈为vue+vuetify+nuxt的ssr，负责业务的开发迭代、抽取基建；负责了如:多语言硬编码的lint工具、基础filter组件等"
+      "dateRange": "2021.07-2022.01",
+      "description": "技术栈为 vue + vuetify + nuxt 的 ssr，负责业务的开发迭代、抽取基建；负责了如:多语言硬编码的lint工具、基础 filter 组件等"
+    },
+    {
+      "company": "奇安信",
+      "dateRange": "2022.02-目前",
+      "description": "主要参与大禹平台 6.4.0、6.60.0、6.62.0、6.70.0 等版本的迭代开发以及国家电网项目的定制化开发，涉及到的模块有:消息中心、日志检索、告警、事件、拓扑图等模块的开发工作"
     }
   ],
   "educations": [
@@ -104,11 +109,65 @@
     "React、Antd、TypeScript、Webpack、Nodejs、Vue、ElementUI、umi、taro、uni-app",
     "AST、低代码等",
     "axios、lodash、dayjs、bpmnjs...",
-    ".NETCore、SqlServer、Dapper、EF、PetaPoco、ABP、Redis、MongoDB",
+    ".NETCore、SqlServer、Dapper、EF、PetaPoco、WPF、ABP、Redis、MongoDB",
     "Docker、CICD、Linux",
-    "第三方支付、第三方登录、快递接口、短信接口、web快递单打印、条码打印、导出excel,word,pdf等常用第三的东西"
+    "第三方支付、第三方登录、快递接口、短信接口、web快递单打印、条码打印、导出 excel,word,pdf 等常用第三的东西"
   ],
   "projects": [
+    {
+      "name": "大禹平台",
+      "url": "",
+      "descriptions": [
+        {
+          "header": "产品介绍",
+          "contents": ["大禹平台是面向安全大数据的通用开发分析平台，并提供配套的内置安全能力;其核心能力包括数据接入、数据治理、云地协同、联合分析系统、事件分析与管理、安全设备接入"]
+        },
+        {
+          "header": "主要职责",
+          "contents": ["主要参与大禹平台 6.4.0、6.60.0、6.62.0、6.70.0 等版本的迭代开发以及国家电网项目的定制化开发，涉及到的模块有:消息中心、日志检索、告警、事件、拓扑图等模块的开发工作"]
+        },
+        {
+          "header": "架构相关",
+          "contents": [
+            "基于 qiankun 微前端框架自定义微前端框架"
+          ]
+        }
+      ],
+      "images": [
+        {
+          "src": "imgs/dayu/alert-normal.png",
+          "title": "告警模块"
+        },
+        {
+          "src": "imgs/dayu/alert-add-filter.png",
+          "title": "添加到检索"
+        },
+        {
+          "src": "imgs/dayu/alert-fields.png",
+          "title": "自定义展示列"
+        },
+        {
+          "src": "imgs/dayu/alert-sort.png",
+          "title": "自定义排序"
+        },
+        {
+          "src": "imgs/dayu/alert-advance.png",
+          "title": "高级模式"
+        },
+        {
+          "src": "imgs/dayu/topology-design.png",
+          "title": "拓扑图设计器"
+        },
+        {
+          "src": "imgs/dayu/topology-bind.png",
+          "title": "拓扑图绑定设备"
+        },
+        {
+          "src": "imgs/dayu/topology-view.png",
+          "title": "拓扑图实际上图"
+        }
+      ]
+    },
     {
       "name": "宝马MINI小程序",
       "url": "",
@@ -124,7 +183,7 @@
         {
           "header": "架构相关",
           "contents": [
-            "采用taro+dva来实现多端，支持编译到小程序、h5页面，一套代码实现两套系统"
+            "采用 taro + dva 来实现多端，支持编译到小程序、h5页面，一套代码实现两套系统"
           ]
         }
       ],
@@ -397,6 +456,12 @@
     }
   ],
   "opens": [
+    {
+      "github": "https://github.com/xiexingen/topology-designable",
+      "title": "拓扑图",
+      "subTitle": "基于 x6 的拓扑图设计器",
+      "detail": "用于设计网络部署拓扑图，支持设计、预览"
+    },
     {
       "github": "https://github.com/nomui/nomui",
       "title": "nomui",
