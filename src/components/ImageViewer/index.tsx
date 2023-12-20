@@ -1,74 +1,39 @@
-import React, { PureComponent } from 'react';
-import PropTypes from 'prop-types';
+import React,{ useState } from 'react';
 import Viewer from 'react-viewer';
 
-class Index extends PureComponent<any, any> {
-  constructor(props) {
-    super(props);
-    this.state = {
-      currentIndex: props.currentIndex,
-    };
-  }
-
-  static propTypes = {
-    images: PropTypes.arrayOf(PropTypes.string).isRequired,
-    isOpen: PropTypes.bool.isRequired,
-    currentIndex: PropTypes.number,
-  };
-
-  static defaultProps = {
-    images: [],
-    currentIndex: 0,
-    isOpen: true,
-  };
-
-  gotoPrevious = () => {
-    const { currentIndex } = this.state;
-    if (currentIndex > 0) {
-      this.setState({
-        currentIndex: currentIndex - 1,
-      });
-    }
-  };
-
-  gotoNext = () => {
-    const { currentIndex } = this.state;
-    if (currentIndex < this.props.images.length - 1) {
-      this.setState({
-        currentIndex: currentIndex + 1,
-      });
-    }
-  };
-
-  handleChangeIndex = (_, index) => {
-    this.setState({
-      currentIndex: index,
-    });
-  };
-
-  handleClose = () => {
-    const { onClose } = this.props;
-    onClose && onClose();
-  };
-
-  render() {
-    const { images, isOpen } = this.props;
-    const { currentIndex } = this.state;
-    return (
-      <Viewer
-        rotatable={false}
-        scalable={false}
-        zoomSpeed={0.1}
-        visible={isOpen}
-        images={images}
-        activeIndex={currentIndex}
-        onChange={this.handleChangeIndex}
-        // onClickPrev={this.gotoPrevious}
-        // onClickNext={this.gotoNext}
-        onClose={this.handleClose}
-      />
-    );
-  }
+export type ImageViewerProps = {
+  images: any[],
+  openIndex: number,
+  onClose:() => void
 }
 
-export default Index;
+const ImageViewer: React.FC<ImageViewerProps> = (props) => {
+
+  const [currentIndex, setCurrentIndex] =useState(props.openIndex);
+
+  const handleChangeIndex = (_:any, index:number) => {
+    setCurrentIndex(index);
+  };
+
+  return (
+    <Viewer
+      rotatable={false}
+      scalable={false}
+      zoomSpeed={0.1}
+      visible={true}
+      images={props.images}
+      activeIndex={currentIndex}
+      onChange={handleChangeIndex}
+      // onClickPrev={this.gotoPrevious}
+      // onClickNext={this.gotoNext}
+      onClose={props.onClose}
+    />
+  )
+};
+
+ImageViewer.defaultProps = {
+  images: [],
+  openIndex:0,
+}
+
+export default ImageViewer

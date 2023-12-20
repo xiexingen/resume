@@ -14,7 +14,7 @@ import styles from './index.less';
 export default () => {
   return (
     <div className={styles.normal}>
-      <Introduce/>
+      <Introduce />
       <Technical dataSource={mockData.technicals} />
       <Social dataSource={mockData.socials} />
       <AboutMe dataSource={mockData.opens} />
