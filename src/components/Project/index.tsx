@@ -3,8 +3,25 @@ import { Collapse, Card, Divider, Skeleton, Row, Col, List, CollapseProps } from
 import { LinkOutlined } from '@ant-design/icons';
 import ImageViewer from '../ImageViewer';
 
+type ProjectItemDescription = {
+  header: string,
+  contents: string[],
+}
+
+type ProjectItemImg = {
+  src: string,
+  title: string,
+}
+
+type ProjectItem = {
+  name: string,
+  url?: string,
+  descriptions: ProjectItemDescription[],
+  images: ProjectItemImg[]
+}
+
 export type ProjectProps = {
-  dataSource: any[]
+  dataSource: ProjectItem[]
 }
 
 const Project: React.FC<ProjectProps> = (props) => {
@@ -53,7 +70,7 @@ const Project: React.FC<ProjectProps> = (props) => {
 
   const items: CollapseProps['items'] = props.dataSource.map((item, index) => {
     return {
-      key: item.id,
+      key: item.name,
       label: item.name,
       extra: item.url ? (
         <a
@@ -68,19 +85,19 @@ const Project: React.FC<ProjectProps> = (props) => {
       children: (
         <>
           <Row className="project-row" {...rowProps}>
-              {item.images.map((imgItem, imgIndex) => (
-                <Col key={imgIndex} {...colItemLayout}>
-                  <Card
-                    className="p-b-xs"
-                    hoverable
-                    onClick={() => handleOpenImgView(item.images, imgIndex)}
-                    cover={<img alt={imgItem.title} src={`/${imgItem.src}`} />}
-                  >
-                    <Card.Meta description={imgItem.title} />
-                  </Card>
-                </Col>
-              ))}
-            </Row>
+            {item.images.map((imgItem, imgIndex) => (
+              <Col key={imgIndex} {...colItemLayout}>
+                <Card
+                  className="p-b-xs"
+                  hoverable
+                  onClick={() => handleOpenImgView(item.images, imgIndex)}
+                  cover={<img alt={imgItem.title} src={`/${imgItem.src}`} />}
+                >
+                  <Card.Meta description={imgItem.title} />
+                </Card>
+              </Col>
+            ))}
+          </Row>
           {item.descriptions.map((desc, descIndex) => (
             <List
               key={descIndex}
@@ -109,12 +126,12 @@ const Project: React.FC<ProjectProps> = (props) => {
       />
       {
         previewImg.openIndex !== -1 && (
-        <ImageViewer
-          onClose={handleCloseViewImage}
-          openIndex={previewImg.openIndex}
-          images={previewImg.images}
-        />
-      )}
+          <ImageViewer
+            onClose={handleCloseViewImage}
+            openIndex={previewImg.openIndex}
+            images={previewImg.images}
+          />
+        )}
     </Card>
   );
 };

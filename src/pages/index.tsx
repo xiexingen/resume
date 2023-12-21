@@ -8,7 +8,7 @@ import Technical from '@/components/Technical';
 import Introduce from '@/components/Introduce'
 import AboutMe from '@/components/AboutMe';
 
-import mockData from '../data.json';
+import mockData from '../data';
 import styles from './index.less';
 
 export default () => {

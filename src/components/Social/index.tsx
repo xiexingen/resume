@@ -1,17 +1,26 @@
 import React from 'react';
 import { List, Card, Divider } from 'antd';
-import * as Icons from '@ant-design/icons';
 
-export default function (props) {
-  const { dataSource } = props;
+type SocialItem = {
+  icon: any,
+  url: string,
+  title: string,
+  description: string
+}
+
+export type SocialProps = {
+  dataSource: SocialItem[]
+}
+
+const Social: React.FC<SocialProps> = (props) => {
   return (
     <Card className="small-card" bordered={false}>
       <Divider>社交主页</Divider>
       <List
         grid={{ gutter: 16, xs: 1, sm: 2, md: 2, lg: 2, xl: 3, xxl: 3 }}
-        dataSource={dataSource}
+        dataSource={props.dataSource}
         renderItem={(item: any) => {
-          const ItemIcon = Icons[item.icon];
+          const ItemIcon = item.icon;
           return (
             <List.Item>
               <Card hoverable>
@@ -35,4 +44,6 @@ export default function (props) {
       />
     </Card>
   );
-}
+};
+
+export default Social

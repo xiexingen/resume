@@ -3,13 +3,23 @@ import { List, Card, Divider, Typography, Avatar } from 'antd';
 
 const { Paragraph, Text } = Typography;
 
-export default function (props) {
-  const { dataSource } = props;
+type AboutMeItem = {
+  github: string,
+  title: string,
+  subTitle: string,
+  detail: string,
+}
+
+export type AboutMeProps = {
+  dataSource: AboutMeItem[]
+}
+
+const AboutMe: React.FC<AboutMeProps> = (props) => {
   return (
     <Card className="small-card" bordered={false}>
       <Divider>个人相关开源技术</Divider>
       <List
-        dataSource={dataSource}
+        dataSource={props.dataSource}
         renderItem={(item: any) => (
           <List.Item
             actions={[
@@ -43,4 +53,6 @@ export default function (props) {
       />
     </Card>
   );
-}
+};
+
+export default AboutMe;

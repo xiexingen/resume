@@ -1,13 +1,28 @@
 import React from 'react';
 import { List, Avatar, Card, Divider, Tag, Tooltip } from 'antd';
 
-export default function (props) {
-  const { dataSource } = props;
+type EducationItem = {
+  name: string,
+  type: string,
+  profession: string,
+  dateRange: string,
+  tagInfo: {
+    short: string,
+    color: string,
+    full: string;
+  }
+}
+
+export type EducationProps = {
+  dataSource: EducationItem[]
+}
+
+const Education: React.FC<EducationProps> = (props) => {
   return (
     <Card className="small-card education" bordered={false}>
       <Divider>教育经历</Divider>
       <List
-        dataSource={dataSource}
+        dataSource={props.dataSource}
         grid={{ gutter: 16, xs: 2, sm: 2, md: 4, lg: 4, xl: 4, xxl: 4 }}
         split={false}
         renderItem={(item: any) => (
@@ -43,4 +58,6 @@ export default function (props) {
       />
     </Card>
   );
-}
+};
+
+export default Education

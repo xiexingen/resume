@@ -1,4 +1,16 @@
-{
+import {
+  CrownOutlined,
+  HighlightOutlined,
+  GithubOutlined,
+  FireOutlined,
+  PullRequestOutlined,
+  PhoneOutlined,
+  QqOutlined,
+  MailOutlined,
+  WechatOutlined,
+} from '@ant-design/icons'
+
+export default {
   "companys": [
     {
       "company": "广州奔步电脑",
@@ -47,37 +59,37 @@
   ],
   "socials": [
     {
-      "icon": "CrownOutlined",
+      "icon": CrownOutlined,
       "url": "https://blog.xxgtalk.cn",
       "title": "个人博客",
       "description": "个人博客分享"
     },
     {
-      "icon": "HighlightOutlined",
+      "icon": HighlightOutlined,
       "url": "https://xiexingen.github.io/hand-tear-ahooks/hooks/async/use-request",
       "title": "手撕ahooks",
       "description": "学习研究ahooks源码"
     },
     {
-      "icon": "GithubOutlined",
+      "icon": GithubOutlined,
       "url": "https://wetrial.github.io/wetrials",
       "title": "wetrials",
       "description": "公司的前端组件库"
     },
     {
-      "icon": "GithubOutlined",
+      "icon": GithubOutlined,
       "url": "https://www.github.com/xiexingen",
       "title": "个人github",
       "description": "个人学习、娱乐的个人github"
     },
     {
-      "icon": "FireOutlined",
+      "icon": FireOutlined,
       "url": "https://github.com/xiexingen/CTS.Signalr",
       "title": "signalr",
       "description": "基于Signalr实现的推送"
     },
     {
-      "icon": "PullRequestOutlined",
+      "icon": PullRequestOutlined,
       "url": "https://github.com/crawlab-team/artipub",
       "title": "artipub",
       "description": "参与的社区项目"
@@ -85,22 +97,22 @@
   ],
   "concats": [
     {
-      "icon": "PhoneOutlined",
+      "icon": PhoneOutlined,
       "title": "手机",
       "description": "18569590930"
     },
     {
-      "icon": "QqOutlined",
+      "icon": QqOutlined,
       "title": "QQ",
       "description": "1002275364"
     },
     {
-      "icon": "MailOutlined",
+      "icon": MailOutlined,
       "title": "邮箱",
       "description": "1002275364@qq.com"
     },
     {
-      "icon": "WechatOutlined",
+      "icon": WechatOutlined,
       "title": "微信",
       "description": "xxg1002275364"
     }
@@ -109,7 +121,7 @@
     "React、Antd、TypeScript、Webpack、Nodejs、Vue、ElementUI、umi、taro、uni-app",
     "AST、低代码等",
     "axios、lodash、dayjs、bpmnjs...",
-    ".NETCore、SqlServer、Dapper、EF、PetaPoco、WPF、ABP、Redis、MongoDB",
+    ".NET Core、SqlServer、Dapper、EF、PetaPoco、WPF、ABP、Redis、MongoDB",
     "Docker、CICD、Linux",
     "第三方支付、第三方登录、快递接口、短信接口、web快递单打印、条码打印、导出 excel,word,pdf 等常用第三的东西"
   ],
@@ -120,7 +132,7 @@
       "descriptions": [
         {
           "header": "产品介绍",
-          "contents": ["大禹平台是面向安全大数据的通用开发分析平台，并提供配套的内置安全能力;其核心能力包括数据接入、数据治理、云地协同、联合分析系统、事件分析与管理、安全设备接入"]
+          "contents": ["大禹平台是面向安全大数据的通用开发分析平台，并提供配套的内置安全能力;其核心能力包括数据接入、数据治理、云地协同、联合分析系统、事件分析与管理、安全设备接入..."]
         },
         {
           "header": "主要职责",
