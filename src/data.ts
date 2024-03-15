@@ -14,12 +14,12 @@ export default {
   "companys": [
     {
       "company": "广州奔步电脑",
-      "dateRange": "2012.11-2016.04",
+      "dateRange": "2013.06-2016.04",
       "description": "新项目的开发(如：订单、充值、提现、支付、快递查询、短信邮件通知、web 快递单打印、条码打印、第三方登录…)相关事情、技术升级、框架的支持等"
     },
     {
       "company": "湖南微试云医疗",
-      "dateRange": "2016.04-2018.09",
+      "dateRange": "2016.04-2021.07",
       "description": "负责公司整体前端架构、基础组件研发和维护；为业务开发人员提供培训、完善开发文档等；公司 github 地址:https://github.com/wetrial、https://github.com/nomui/nomui"
     },
     {
