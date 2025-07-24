@@ -121,7 +121,7 @@ export default {
     "React、Antd、TypeScript、Webpack、Nodejs、Vue、ElementUI、umi、taro、uni-app",
     "AST、低代码等",
     "axios、lodash、dayjs、bpmnjs...",
-    ".NET Core、SqlServer、Dapper、EF、PetaPoco、WPF、ABP、Redis、MongoDB",
+    ".NET Core、SqlServer、Dapper、EF、SqlSugar、ABP、Redis、MongoDB",
     "Docker、CICD、Linux",
     "第三方支付、第三方登录、快递接口、短信接口、web快递单打印、条码打印、导出 excel,word,pdf 等常用第三的东西"
   ],

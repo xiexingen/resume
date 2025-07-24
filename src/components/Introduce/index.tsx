@@ -29,8 +29,8 @@ const Introduce: React.FC<IntroduceProps> = (props) => {
           基于 ast 写过用来检测代码硬编码的 eslint 插件，关注一些如低代码的东西
         </Paragraph>
         <Paragraph>
-          典型的代表作
           <Space>
+          典型的代表作
             <Button
             type="link"
             href="https://github.com/xiexingen/topology-designable"
