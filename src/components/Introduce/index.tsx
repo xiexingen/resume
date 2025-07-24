@@ -30,7 +30,8 @@ const Introduce: React.FC<IntroduceProps> = (props) => {
         </Paragraph>
         <Paragraph>
           典型的代表作
-          <Button
+          <Space>
+            <Button
             type="link"
             href="https://github.com/xiexingen/topology-designable"
             target="_blank"
@@ -51,6 +52,7 @@ const Introduce: React.FC<IntroduceProps> = (props) => {
           >
             wetrials
           </Button>
+          </Space>
         </Paragraph>
 
         {/* <Title level={2}>设计资源</Title>
